@@ -1,7 +1,7 @@
-import UserFilter from "@/components/screen-3/user-filter"
-import UserInformation from "@/components/screen-3/user-information"
-import UserNav from "@/components/screen-3/user-nav"
-import UserTable from "@/components/screen-3/user-table"
+import UserFilter from "@/components/a1/screen-3/user-filter"
+import UserInformation from "@/components/a1/screen-3/user-information"
+import UserNav from "@/components/a1/screen-3/user-nav"
+import UserTable from "@/components/a1/screen-3/user-table"
 import { Home } from "lucide-react"
 
 const UserManagement = () => {

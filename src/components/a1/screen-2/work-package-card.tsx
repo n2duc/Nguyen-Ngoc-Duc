@@ -1,5 +1,5 @@
 import { ChevronRight, ShoppingCart } from "lucide-react"
-import { Button } from "../ui/button"
+import { Button } from "../../ui/button"
 
 const WorkPackageCard = ({ index }: { index: number }) => {
   return (

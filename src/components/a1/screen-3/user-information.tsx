@@ -1,8 +1,8 @@
 import { ExternalLink, LibraryBig, SquarePen } from "lucide-react";
 import Heading from "./heading";
 import UserAccordions from "./user-accordions";
-import { Checkbox } from "../ui/checkbox";
-import { Label } from "../ui/label";
+import { Checkbox } from "../../ui/checkbox";
+import { Label } from "../../ui/label";
 
 const UserInformation = () => {
   return (

@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils"
 import { ArrowUp, Circle, FileText, Plus } from "lucide-react"
-import { Button } from "../ui/button"
-import { Textarea } from "../ui/textarea"
+import { Button } from "../../ui/button"
+import { Textarea } from "../../ui/textarea"
 import TimeLine from "./time-line"
 
 const LeftSide = ({ className }: { className: string }) => {

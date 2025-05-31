@@ -1,7 +1,7 @@
 import { ArrowRight, Search } from "lucide-react"
-import { Input } from "../ui/input"
+import { Input } from "../../ui/input"
 import WorkPackageCard from "./work-package-card"
-import { Button } from "../ui/button"
+import { Button } from "../../ui/button"
 
 const WorkPackageList = () => {
   return (

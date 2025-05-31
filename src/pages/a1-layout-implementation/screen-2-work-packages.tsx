@@ -1,5 +1,5 @@
-import CategoriesSide from "@/components/screen-2/categories-side";
-import WorkPackageList from "@/components/screen-2/work-package-list";
+import CategoriesSide from "@/components/a1/screen-2/categories-side";
+import WorkPackageList from "@/components/a1/screen-2/work-package-list";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";

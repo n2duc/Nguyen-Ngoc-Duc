@@ -1,25 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-interface AddressData {
-  province: string;
-  district: string;
-  street: string;
-}
-
 interface FormState {
   schema: string;
-  formData: Record<string, string | number | boolean>;
-  addressData: AddressData;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  formData: Record<string, any>;
 };
 
 const initialState: FormState = {
   schema: "",
   formData: {},
-  addressData: {
-    province: '',
-    district: '',
-    street: ''
-  }
 }
 
 const formSlice = createSlice({
@@ -32,19 +21,15 @@ const formSlice = createSlice({
     setFormData(state, action) {
       state.formData = action.payload;
     },
-    setAddressData(state, action) {
-      state.addressData = action.payload;
-    },
     resetForm(state) {
       state.formData = {};
-      state.addressData = {
-        province: '',
-        district: '',
-        street: ''
-      };
+    },
+    resetAll(state) {
+      state.schema = "";
+      state.formData = {};
     }
   }
 });
 
-export const { setSchema, setFormData, setAddressData, resetForm } = formSlice.actions;
+export const { setSchema, setFormData, resetForm, resetAll } = formSlice.actions;
 export default formSlice.reducer;

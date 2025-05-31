@@ -1,8 +1,8 @@
 import { FileText } from "lucide-react"
-import { Badge } from "../ui/badge"
-import { Button } from "../ui/button"
-import { Progress } from "../ui/progress"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../ui/table"
+import { Badge } from "../../ui/badge"
+import { Button } from "../../ui/button"
+import { Progress } from "../../ui/progress"
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../../ui/table"
 
 const ClientTable = () => {
   return (

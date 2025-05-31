@@ -1,6 +1,6 @@
 import { ChartSpline, ExternalLink, FileText, NotepadText, Percent } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
-import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../../ui/accordion";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../../ui/tooltip";
 import Heading from "./heading";
 import ClientTable from "./client-table";
 

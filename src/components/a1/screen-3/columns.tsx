@@ -1,7 +1,7 @@
 import type { User } from "@/lib/validations";
 import type { ColumnDef } from "@tanstack/react-table";
-import { Checkbox } from "../ui/checkbox";
-import { Badge } from "../ui/badge";
+import { Checkbox } from "../../ui/checkbox";
+import { Badge } from "../../ui/badge";
 
 export const columns: ColumnDef<User>[] = [
   {

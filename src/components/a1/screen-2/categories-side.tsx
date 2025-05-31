@@ -1,6 +1,6 @@
 import { List } from "lucide-react"
-import { Button } from "../ui/button"
-import { Tabs, TabsList, TabsTrigger } from "../ui/tabs"
+import { Button } from "../../ui/button"
+import { Tabs, TabsList, TabsTrigger } from "../../ui/tabs"
 
 const CategoriesSide = () => {
   return (

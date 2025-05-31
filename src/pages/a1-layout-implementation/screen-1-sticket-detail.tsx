@@ -1,5 +1,5 @@
-import LeftSide from "@/components/screen-1/left-side";
-import RightSide from "@/components/screen-1/right-side";
+import LeftSide from "@/components/a1/screen-1/left-side";
+import RightSide from "@/components/a1/screen-1/right-side";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Separator } from "@/components/ui/separator";
 import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";

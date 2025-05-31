@@ -1,5 +1,5 @@
 import { LayoutDashboard, CircleHelp, Calculator, SquarePen, BookOpenText, Building2, ExternalLink } from 'lucide-react'
-import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from './ui/sidebar'
+import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar'
 import logo from "@/assets/logo.jpg";
 import Logo from "@/assets/logo.png"; // Assuming you have a logo image
 
