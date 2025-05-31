@@ -1,10 +1,10 @@
 # Result Narration Checklist
 
 
-- [ ] A1: Layout Implementation. UI Framework: _________
-  - [ ] Screen 1
-  - [ ] Screen 2
-  - [ ] Screen 3
+- [X] A1: Layout Implementation. UI Framework: _________
+  - [X] Screen 1
+  - [X] Screen 2
+  - [X] Screen 3
 
 - [ ] A2: JSON form rendering components. Libaries used: ______________________
   - [ ] Implement a component that receive JSON Schemas input (via a text box) and render HTML forms.
