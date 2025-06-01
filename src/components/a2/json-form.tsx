@@ -55,13 +55,13 @@ const JsonForm = () => {
           Vietnamese address format.
         </CardDescription>
       </CardHeader>
-      <CardContent className="space-y-4 flex-1">
+      <CardContent className="flex-1 flex flex-col gap-4">
         <Textarea
           id="schema-input"
           value={schemaInput}
           onChange={handleSchemaInputChange}
           placeholder="Enter JSON schema here..."
-          className="h-[400px] font-mono text-sm resize-none"
+          className="flex-1 font-mono text-sm resize-none overflow-auto"
         />
 
         {parseError && <div className="text-red-500 text-sm">{parseError}</div>}

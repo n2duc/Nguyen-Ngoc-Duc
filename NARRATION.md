@@ -12,10 +12,10 @@
   - [x] Form content is saved to the state store and persist across page refreshes.
   - [x] There should be a reset action to reset the data in the store.
 
-- [ ] A3: Paginated component. Libraries used: ____________________
-  - [ ] Implement a component that render the data as paginated tables.
-  - [ ] Data can be converted into JSON before use.
-  - [ ] Allow sorting and change sorting order by clicking the table header.
-  - [ ] Allow filter by each columns values.
-  - [ ] The current page & active filter must be saved to the state store and persist across page refreshes
+- [x] A3: Paginated component. Libraries used: Shadcn UI, Tanstack Table, Redux-Toolkit
+  - [x] Implement a component that render the data as paginated tables.
+  - [x] Data can be converted into JSON before use.
+  - [x] Allow sorting and change sorting order by clicking the table header.
+  - [x] Allow filter by each columns values.
+  - [x] The current page & active filter must be saved to the state store and persist across page refreshes
 

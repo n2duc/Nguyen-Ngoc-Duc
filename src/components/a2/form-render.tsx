@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import JsonRender from "./json-render";
 
 const FormRender = () => {
-  const { schema, formData } = useAppSelector((state) => state.form);
+  const { formData } = useAppSelector((state) => state.form);
   return (
     <Tabs defaultValue="form" className="flex-1">
       <TabsList>
@@ -21,7 +21,7 @@ const FormRender = () => {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <JsonRender schema={schema ? JSON.parse(schema) : null} />
+            <JsonRender />
           </CardContent>
         </Card>
       </TabsContent>

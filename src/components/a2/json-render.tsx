@@ -13,10 +13,25 @@ import { Input } from "../ui/input";
 import { Checkbox } from "../ui/checkbox";
 import { setFormData } from "@/stores/slices/form-slice";
 import AddressInput from "./address-input";
+import { useMemo } from "react";
 
-const JsonRender = ({ schema }: { schema: any }) => {
+const JsonRender = () => {
   const dispatch = useAppDispatch();
-  const formData = useAppSelector((state) => state.form.formData);
+  const { schema, formData } = useAppSelector((state) => state.form);
+
+  const { schemaParsed, parseError } = useMemo(() => {
+    if (!schema || schema.trim() === "") {
+      return { schemaParsed: null, parseError: null };
+    }
+
+    try {
+      const parsed = JSON.parse(schema);
+      return { schemaParsed: parsed, parseError: null };
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Unknown JSON parsing error";
+      return { schemaParsed: null, parseError: errorMessage };
+    }
+  }, [schema]);
 
   const handleInputChange = (fieldName: string, value: any) => {
     if (formData[fieldName] !== value) {
@@ -158,13 +173,17 @@ const JsonRender = ({ schema }: { schema: any }) => {
     }
   };
 
-  if (!schema || !schema.properties) {
+  if (!schemaParsed || !schemaParsed.properties) {
     return <div className="text-muted-foreground">Please enter a valid JSON schema to generate a form.</div>
+  }
+
+  if (parseError) {
+    return <div className="text-red-500">{parseError}</div>
   }
 
   return (
     <div className="space-y-4">
-      {Object.entries(schema.properties).map(([fieldName, fieldSchema]) => renderField(fieldName, fieldSchema))}
+      {Object.entries(schemaParsed.properties).map(([fieldName, fieldSchema]) => renderField(fieldName, fieldSchema))}
     </div>
   )
 };

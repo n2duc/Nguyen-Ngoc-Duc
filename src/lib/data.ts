@@ -1,4 +1,5 @@
-import type { User } from "./validations";
+import type { Customer, User } from "./validations";
+import customers from "@/assets/customer-data.json";
 
 export const users: User[] = [
   {
@@ -130,3 +131,5 @@ export const sampleSchema = {
     },
   },
 };
+
+export const customersData: Customer[] = customers as Customer[];
