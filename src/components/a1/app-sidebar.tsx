@@ -1,7 +1,7 @@
 import { LayoutDashboard, CircleHelp, Calculator, SquarePen, BookOpenText, Building2, ExternalLink } from 'lucide-react'
 import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui/sidebar'
 import logo from "@/assets/logo.jpg";
-import Logo from "@/assets/logo.png"; // Assuming you have a logo image
+import LogoCompany from "@/assets/LOGO.png";
 
 const items = {
   navMain: [
@@ -98,7 +98,7 @@ const AppSidebar = () => {
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground">
               <div className='h-8 w-8 overflow-hidden shrink-0'>
-                <img src={Logo} alt="logo" className='w-full h-full' />
+                <img src={LogoCompany} alt="logo" className='w-full h-full' />
               </div>
               <div className="grid flex-1 text-left text-sm leading-tight">
                 <span className="truncate font-bold text-main">RIVER FLOW</span>
